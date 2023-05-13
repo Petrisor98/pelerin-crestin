@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelerin crestin</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Special+Elite&display=swap"
         rel="stylesheet" />
     <!-- add icon link -->
-    <!--<link rel="icon" href="/images/icon.svg" type="image/x-icon"> -->
-    <link rel="icon" type="image/svg" href="./images/icon.svg?" >
+    <link rel="icon" type="image/svg" href="./images/icon.svg?">
 </head>
 
 <body>
@@ -24,25 +24,106 @@
 
     <!-- Navbar -->
     <nav class="navbar target">
-        <a href="#home" class="navbar-link">Acasa</a>
+        <a href="#intro" class="navbar-link">Intro</a>
+        <a href="#home" class="navbar-link">Acasă</a>
+        <a href="#about" class="navbar-link">Opinii</a>
+        <a href="#apps" class="navbar-link">Aplicații</a>
         <a href="#resources" class="navbar-link">Resurse</a>
         <a href="#contact" class="navbar-link">Contact</a>
     </nav>
+
+    <!-- Section Intro -->
+    <div class="wrapper">
+        <section class="section-intro target center" id="intro">
+        </section>
+    </div>
 
     <!-- Section 1 -->
     <div class="wrapper">
         <section class="section-1 target center" id="home">
             <div class="banner">
-                <h1 class="section-heading">Pelerin crestin</h1>
+                <h1 class="section-heading">Pelerin creștin</h1>
                 <p class="banner-heading">
-                    <span class="heading-1">Ganduri bune</span>
+                    <span class="heading-1">Gânduri bune</span>
                     <span class="heading-2">Pelerinaj</span>
-                    <span class="heading-3">Partasie frateasca</span>
-                    <span class="heading-4">Uniti in Hristos</span>
+                    <span class="heading-3">Părtășie frățească</span>
+                    <span class="heading-4">Uniți în Hristos</span>
                 </p>
-                <button class="banner-btn" onclick="window.open('https://chatapp-4909a.web.app','_blank')">Aplicatie
-                    mesagerie</button>
-                <button class="banner-btn" onclick="window.open('https://web3-news-feed.web.app/','_blank')">Asterne un gand</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section About -->
+    <div class="wrapper">
+        <section class="section-about target center" id="about">
+            <h1 class="sectionabout-heading section-about">Opinii</h1>
+            <div class="customers-wrapper">
+                <div class="customer">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="customer-text">Text</p>
+                    <div class="customer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <img src="images/customer-img-1.jpg" class="customer-img">
+                    <h4 class="customer-name">Petrisor A</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section Apps -->
+    <div class="wrapper">
+        <section class="popular-tours target center" id="apps">
+            <h1 class="popular-tours-heading">Aplicații</h1>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="front-side">
+                        <img src="images/social_app.png" alt="Forest" class="card-image" />
+                        <h1 class="tour-name">Socializare</h1>
+                        <ul class="card-list">
+                            <li class="card-list-item">Aplicație web centralizată</li>
+                            <li class="card-list-item">100 conexiuni simultane</li>
+                            <li class="card-list-item">Diferite grupuri: pelerinaje, muzică, poezii, citate...</li>
+                            <li class="card-list-item">Discuții individuale criptate end-to-end</li>
+                        </ul>
+                        <button class="navigation-button">
+                            Încearcă &gt;&gt;
+                        </button>
+                    </div>
+                    <div class="back-side center">
+                        <button class="navigation-button">
+                            &lt;&lt; Înapoi
+                        </button>
+                        <button class="banner-btn"
+                            onclick="window.open('https://chatapp-4909a.web.app','_blank')">Accesează</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front-side">
+                        <img src="images/news_feed.png" alt="River" class="card-image" />
+                        <h1 class="tour-name">Flux informații</h1>
+                        <ul class="card-list">
+                            <li class="card-list-item">Aplicație web descentralizată</li>
+                            <li class="card-list-item">Vizualizare postări</li>
+                            <li class="card-list-item">Diferite teme: știri, familie, educație, ortodoxie, sănătate, tehnologie</li>
+                            <li class="card-list-item">Necesită extensie portofel digital pentru publicare</li>
+                        </ul>
+                        <button class="navigation-button">
+                            Încearcă &gt;&gt;
+                        </button>
+                    </div>
+                    <div class="back-side center">
+                        <button class="navigation-button">
+                            &lt;&lt; Înapoi
+                        </button>
+                        <button class="banner-btn"
+                            onclick="window.open('https://web3-news-feed.web.app/','_blank')">Accesează</button>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -138,18 +219,7 @@
     <!-- Section 3 -->
     <div class="wrapper">
         <section class="section-3 target center" id="contact">
-            <h1 class="section-heading">Contact Us</h1>
-            <!--
-            <form class="contact-form">
-                <input type="text" class="form-input" placeholder="Your Full Name" />
-                <input type="email" class="form-input" placeholder="Your Email" />
-                <textarea class="form-input" placeholder="Enter Message"></textarea>
-                <input class="form-btn" type="submit" value="Submit" />
-            </form>
-            <p class="copyright">
-                Copyright &copy; CodeAndCreate All Rights Reserved
-            </p>
-            -->
+            <h1 class="section-heading">Scrie-ne dacă vrei :) </h1>
             <div class="contact-wrapper">
                 <div class="contact-left"></div>
                 <div class="contact-right">
@@ -158,17 +228,18 @@
                             <input type="text" name="Name" class="field" placeholder="Nume" required />
                         </div>
                         <div class="input-group">
-                            <input type="email" name="Email" class="field" placeholder="E-mail" required/>
+                            <input type="email" name="Email" class="field" placeholder="E-mail" required />
                         </div>
                         <div class="input-group">
                             <textarea name="Message" class="field" placeholder="Mesaj" required></textarea>
                         </div>
-                        <input type="submit" class="submit-btn" value="Trimite"/>
+                        <input type="submit" class="submit-btn" value="Trimite" />
                     </form>
                 </div>
             </div>
             <p class="copyright">
-                Copyright &copy; Pelerin crestin Toate drepturile rezervate
+                Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; Pelerin crestin
             </p>
         </section>
     </div>
