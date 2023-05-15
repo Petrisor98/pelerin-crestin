@@ -134,16 +134,35 @@ section.change {
   text-shadow: 0.3rem 0.3rem 0.5rem #555;
 }
 
-/* Section Intro */
-.section-intro {
+.section-intro-paragraph {
+  width: 100rem;
+  position: absolute;
+  bottom: 8rem;
+  right: 15rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #30ea1f;
+  border-top: 0.3rem double #aaa;
+  border-bottom: 0.3rem double #aaa;
+  padding: 2rem;
+  display: flex;
   flex-direction: column;
-  background: no-repeat center url(images/Presentation1.png);
-  background-size: cover;
-  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
 }
 
-.section-intro-img {
-  width: 90%;
+.fa-quote-left {
+  align-self: flex-start;
+  font-size: 5rem;
+  color: #bbb;
+}
+
+.fa-quote-right {
+  align-self: flex-end;
+  font-size: 4rem;
+  color: #e68702;
 }
 
 /* Section about */
@@ -156,7 +175,7 @@ section.change {
   background-size: cover;
 }
 
-.section-about .sectionabout-heading {
+.sectionabout-heading {
   font-size: 10rem;
   font-weight: bold;
   color: #ffffff;
@@ -352,11 +371,14 @@ section.change {
 
 /* Section-1 */
 .section-1 {
-  flex-direction: column;
-  background: linear-gradient(to top,
-      rgba(38, 38, 38, 0.7),
-      rgba(55, 51, 51, 0.6)), no-repeat center url(images/intro3.jpg);
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), no-repeat center url(images/intro3.jpg);
   background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
+  position: relative;
 }
 
 .section-1 .section-1-heading {
@@ -365,13 +387,9 @@ section.change {
   text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
 }
 
-.section-1-img {
-  width: 90%;
-}
-
 .banner {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -379,22 +397,15 @@ section.change {
 }
 
 .banner-heading {
-  font-size: 10rem;
-  font-weight: bolder;
-  height: 20rem;
+  height: 25rem;
   margin-bottom: 4rem;
   perspective: 50rem;
-  color: #fff;
   overflow: hidden;
-  letter-spacing: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
 }
 
 .banner-heading span {
-  font-family: "Oswald", sans-serif;
-  font-size: 10rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 12rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -508,9 +519,9 @@ section.change {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: linear-gradient( to top,
+  background: linear-gradient(to bottom,
       rgba(249, 246, 179, 0.949),
-      rgb(111, 255, 98)), no-repeat center;
+      rgb(64, 126, 58)), no-repeat center;
   align-items: center;
 }
 
@@ -716,6 +727,12 @@ section.change {
 }
 
 /* Responsive */
+@media (max-width: 1650px) {
+  html {
+    font-size: 57%;
+  }
+}
+
 @media (max-width: 1500px) {
   .navbar {
     width: 20vw;
@@ -734,10 +751,6 @@ section.change {
 
   .section-heading {
     font-size: 7rem;
-  }
-
-  .section-1 {
-    justify-content: space-evenly;
   }
 
   .section-2 {
@@ -766,6 +779,10 @@ section.change {
 }
 
 @media (max-width: 1400px) {
+  html {
+    font-size: 45%;
+  }
+
   .banner-heading span {
     font-size: 10rem;
   }
@@ -774,7 +791,7 @@ section.change {
     height: auto;
   }
 
-  .section-about .sectionabout-heading {
+  .sectionabout-heading {
     font-size: 8rem;
     margin-bottom: 10rem;
   }
@@ -833,14 +850,6 @@ section.change {
     transform: rotateY(20deg);
   }
 
-  .section-1-img {
-    width: 90%;
-  }
-
-  .section-intro-img {
-    width: 90%;
-  }
-
   .section-3 {
     height: auto;
   }
@@ -871,12 +880,16 @@ section.change {
 }
 
 @media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+
   .banner {
-    top: 25%;
+    top: 50%;
   }
 
   .banner-heading {
-    height: 15rem;
+    height: 20rem;
   }
 
   .banner-heading span {
@@ -887,6 +900,16 @@ section.change {
 @media (max-width: 800px) {
   .popular-tours-heading {
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 35%;
+  }
+
+  .section-1 {
+    height: 100vh;
   }
 }
 
@@ -909,7 +932,7 @@ section.change {
     font-size: 5.5rem;
   }
 
-  .section-about .sectionabout-heading {
+  .sectionabout-heading {
     font-size: 8rem;
     margin-bottom: 10rem;
   }
@@ -918,6 +941,10 @@ section.change {
 @media (max-width: 700px) {
   html {
     font-size: 35%;
+  }
+
+  .section-intro {
+    height: 100vh;
   }
 
   .field {
@@ -956,14 +983,6 @@ section.change {
     font-size: 4.5rem;
   }
 
-  .section-1-img {
-    width: 100%;
-  }
-
-  .section-intro-img {
-    width: 100%;
-  }
-
   .contact-form {
     width: 40rem;
     border: 1rem solid rgba(255, 255, 255, 0.8);
@@ -975,7 +994,7 @@ section.change {
 }
 
 @media (max-width: 550px) {
-  .section-about .sectionabout-heading {
+  .sectionabout-heading {
     font-size: 6rem;
   }
 
