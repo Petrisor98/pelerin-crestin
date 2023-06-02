@@ -169,7 +169,7 @@ section.change {
 .section-about {
   display: flex;
   flex-direction: column;
-  background: url(images/starry_sky.png) center no-repeat;
+  background: url(images/starry_sky.jpg) center no-repeat;
   background-size: cover;
 }
 
